@@ -1,0 +1,14 @@
+INFO     root:browser.py:16 Prepare browser
+DEBUG    selenium.webdriver.common.driver_finder:driver_finder.py:60 Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\Dell\PycharmProjects\Autotest_final\src\fixtures\system\chromedriver.exe
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `C:\Users\Dell\PycharmProjects\Autotest_final\src\fixtures\system\chromedriver.exe` in a child process with pid: 22224 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 POST http://localhost:52742/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': 'normal', 'goog:chromeOptions': {'extensions': [], 'args': []}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:246 Starting new HTTP connection (1): localhost:52742
+DEBUG    urllib3.connectionpool:connectionpool.py:474 http://localhost:52742 "POST /session HTTP/1.1" 200 882
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"126.0.6478.127","chrome":{"chromedriverVersion":"126.0.6478.126 (d36ace6122e0a59570e258d82441395206d60e1c-refs/branch-heads/6478@{#1591})","userDataDir":"C:\\Users\\Dell\\AppData\\Local\\Temp\\scoped_dir22224_128387889"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52749"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"2481bf95a11823e3ec5e44360507353b"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+INFO     root:browser.py:21 Browser has been started
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:301 DELETE http://localhost:52742/session/2481bf95a11823e3ec5e44360507353b {}
+DEBUG    urllib3.connectionpool:connectionpool.py:474 http://localhost:52742 "DELETE /session/2481bf95a11823e3ec5e44360507353b HTTP/1.1" 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:330 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:357 Finished Request
+INFO     root:browser.py:24 Browser has been closed

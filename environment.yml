@@ -1,0 +1,14 @@
+name: Final_AT
+channels:
+  - conda-forge
+  - microsoft
+dependencies:
+  - python=3.9.5
+  - requests=2.26.0
+  - selenium=4.22.0
+  - python-chromedriver-binary
+  - pytest
+  - allure-pytest
+  - flake8=7.1.0
+  - webdriver-manager
+  - pytest-playwright
